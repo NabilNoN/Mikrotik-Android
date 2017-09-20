@@ -1,4 +1,4 @@
-package com.khanhnd.mikrotik;
+package com.khanhnd.mikrotik.operation;
 
 import javax.net.SocketFactory;
 import me.legrange.mikrotik.ApiConnection;

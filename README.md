@@ -1,45 +1,19 @@
-# mikrotik-java 
+# Mikrotik Android 
 
 A Java client library implementation for the Mikrotik RouterOS API. 
 
-This project provides a Java client to manipulate Mikrotik routers using the remote API. Simple things must be easy to do, and complex things must be possible.
+This project provides a Android client to manipulate Mikrotik routers using the remote API. Simple things must be easy to do, and complex things must be possible.
 
 ## Versions
 
-[![Build Status](https://travis-ci.org/GideonLeGrange/mikrotik-java.svg?branch=master)](https://travis-ci.org/GideonLeGrange/mikrotik-java)
+[![Build Status](https://github.com/kildo162/Mikrotik-Android)](https://github.com/kildo162/Mikrotik-Android)
 
-**The current stable version is 3.0.4**
+**The current stable version is 1.0.0**
 
-Version 3.0.4 captures several months worth of small code clean-ups and documentation improvements.
-
-### Changes in version 3.0:
-
-Version 3.0 addresses the problems the API had around TLS encryption. The way secure connections are implemented is changed so that the user has complete control over the creation of TLS sockets. To this end:
-* A new method, `connect(SocketFactory fact, String host, int port, int timeout)`, was added to allow for better user control over sockets and especially encryption.
-* The `connectTLS()` API methods were removed. 
-* Most of the overloaded `connect()` methods were removed. 
-* Added a pre-built `jar` file to the downloads.
-
-Further changes include:
-* The previously deprecated `disconnect()` method is removed. 
-
-#### Versions 1.x and 2.x
-
-Versions 1 and 2 are considered *obsolete* and will no longer be supported or patched. 
+Version 1.0.0
 
 ## Getting the API
 
-Maven users can use the artifact from Maven Central with this dependency:
-
-```xml
-<dependency>
-  <groupId>me.legrange</groupId>
-  <artifactId>mikrotik</artifactId>
-  <version>3.0.4</version>
-</dependency>
-```
-
-You can also download the pre-built jar file, or a zip or tar.gz file with the source for the latest release [here](https://github.com/GideonLeGrange/mikrotik-java/releases/latest)
 
 ## Asking for help or contributing
 

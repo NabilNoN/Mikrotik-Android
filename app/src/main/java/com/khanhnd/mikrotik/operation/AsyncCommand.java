@@ -1,4 +1,4 @@
-package com.khanhnd.mikrotik;
+package com.khanhnd.mikrotik.operation;
 
 import java.util.Map;
 import me.legrange.mikrotik.MikrotikApiException;

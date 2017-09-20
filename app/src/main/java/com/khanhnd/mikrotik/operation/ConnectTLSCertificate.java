@@ -13,22 +13,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.khanhnd.mikrotik;
+package com.khanhnd.mikrotik.operation;
 
 import java.util.List;
 import java.util.Map;
+import javax.net.ssl.SSLSocketFactory;
 import me.legrange.mikrotik.ApiConnection;
 import me.legrange.mikrotik.MikrotikApiException;
 
 /**
- * Example: Open an Anonymous TLS connection
+ * Example: Open a TLS connection
  *
  * @author gideon
  */
-public class ConnectTLSAnonymous {
+public class ConnectTLSCertificate {
 
     public static void main(String... args) throws Exception {
-        ConnectTLSAnonymous ex = new ConnectTLSAnonymous();
+        ConnectTLSCertificate ex = new ConnectTLSCertificate();
         ex.connect();
         ex.test();
         ex.disconnect();
@@ -42,7 +43,7 @@ public class ConnectTLSAnonymous {
     }
 
     protected void connect() throws Exception {
-        con = ApiConnection.connect(AnonymousSocketFactory.getDefault(), Config.HOST, ApiConnection.DEFAULT_TLS_PORT, ApiConnection.DEFAULT_CONNECTION_TIMEOUT);
+        con = ApiConnection.connect(SSLSocketFactory.getDefault(), Config.HOST, ApiConnection.DEFAULT_TLS_PORT, ApiConnection.DEFAULT_CONNECTION_TIMEOUT);
         con.login(Config.USERNAME, Config.PASSWORD);
     }
 
